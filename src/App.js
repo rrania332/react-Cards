@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+
+import { data as testData } from "./test";
+import Card from "./components/Card";
 
 function App() {
+  const [data, setData] = useState(testData);
+  function deleteCard(id) {
+    setData((prev) =>
+      prev.filter((item) => {
+        return item.id !== id;
+      })
+    );
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {data.map((el) => (
+        <Card
+          id={el.id}
+          key={el.id}
+          image={el.image}
+          title={el.title}
+          description={el.description}
+          deleteCard={() => deleteCard(el.id)}
+        />
+      ))}
     </div>
   );
 }
