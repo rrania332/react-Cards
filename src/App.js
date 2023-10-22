@@ -7,11 +7,7 @@ import Card from "./components/Card";
 function App() {
   const [data, setData] = useState(testData);
   function deleteCard(id) {
-    setData((prev) =>
-      prev.filter((item) => {
-        return item.id !== id;
-      })
-    );
+    setData((prev) => prev.filter((item) => item.id !== id));
   }
 
   return (
