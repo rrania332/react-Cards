@@ -1,0 +1,32 @@
+.add_card{
+  border-radius: 25px;
+  margin: 50px 100px;
+  box-shadow: 8px 5px 8px 5px rgba(82, 82, 82, 0.479);
+  gap: 10px;
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+ background: linear-gradient(to left, #259ce14d, #05185560, #ae7bf094);
+ 
+}
+
+.test{
+  font-size: 1rem;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.text{
+  padding: 10px 18px;
+  border-radius: 20px;
+  border: 2px solid rgb(128, 129, 129);
+}
+.bttn{
+  align-self: center;
+margin-top: auto;
+  padding: 10px 18px;
+  border: 2px solid  rgb(12, 12, 11);
+  border-radius:20px ;
+cursor: pointer;
+font-weight: 700;
+}
