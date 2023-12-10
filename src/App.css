@@ -20,23 +20,6 @@ html{
   gap: 30px;
  overflow: auto;
 }
-.add_card{
-  
-  box-shadow: 3px 5px 8px rgba(82, 82, 82, 0.479);
-  gap: 10px;
-  padding: 10px 0;
- display: flex;
- justify-content:space-around;
- align-items: center;
-flex-direction: column;
-}
 
-.bttn{
-  align-self: center;
-margin-top: auto;
-  padding: 10px 18px;
-  border: 2px solid  rgb(12, 12, 11);
-  border-radius:20px ;
-cursor: pointer;
-font-weight: 700;
-}
+
+
